@@ -6,4 +6,4 @@ before_install:
   - docker build -t p1ker/docker-react -f Dockerfile.dev .
 
 script: 
-  - docker run p1ker/docker-react npm run test -- --coverage
+  - docker run p1ker/docker-react npm run test -- --watchAll=false
